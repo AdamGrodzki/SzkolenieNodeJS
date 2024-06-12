@@ -1,14 +1,35 @@
-import fs from "fs";
+import fs from "fs"
 
-export const readData = () => {
+export const Task1 = () => {
   try {
     const data = fs.readFileSync("../dane.json");
     const dataParsed = JSON.parse(data);
     console.log(dataParsed);
     return dataParsed;
   } catch (err) {
-    console.error(err);
+    console.log(err);
   }
-};
+}
+Task1()
 
-readData();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
